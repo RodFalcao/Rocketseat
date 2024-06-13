@@ -1,4 +1,5 @@
 # Rocketseat
 ---
-Nesse repositorio vou postar os trabalhos feitos no curso da rocketseat!
+Nesse repositorio vou postar o primeiro proheto feito na rocketseat!
 - 
+projeto de introducao ao html e css!
