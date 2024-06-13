@@ -1,5 +1,5 @@
 # Rocketseat Projetos
 ---
-Nesse repositorio vou postar o primeiro proheto feito na rocketseat!
+Nesse repositorio vou postar meus projetos feitos no curso da rocketseat!
 - 
 
