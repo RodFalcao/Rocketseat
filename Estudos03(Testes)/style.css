@@ -1,0 +1,91 @@
+#treine {
+  font-family: "Inter", sans-serif;
+  color: #89c5cc;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 34%;
+}
+.container-botoes {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-botao {
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  color: #323036c7;
+}
+.container-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  margin-top: 40px;
+}
+.treino {
+  width: 450px;
+  height: 450px;
+  margin-left: 10%;
+}
+li {
+  list-style-type: none;
+}
+.container-infos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.titulo-center {
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+  font-size: 49px;
+  font-weight: normal;
+}
+.spantitulo {
+  color: #89c5cc;
+  font-weight: bold;
+}
+.subtitulo-center {
+  font-family: "Mulish", sans-serif;
+  color: #7d7987c9;
+  font-size: 14px;
+}
+.subtitulo-span {
+  font-size: 14px;
+}
+.container-contato {
+  margin-top: 50px;
+}
+.contato {
+  background-color: #69b99d;
+  height: 56px;
+  width: 179px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f9f9f9;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 4px;
+}
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.subtitulo-final {
+  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+  font-weight: normal;
+}
+.footer-contato {
+  color: #000000;
+  font-weight: bolder;
+}
