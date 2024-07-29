@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container-titulo">
+            <div class="titulo-subtitulo">
+                <h1 class="titulo">Avalie a sua mentoria</h1>
+                <h3 class="subtitulo">
+                    Chegou a hora de avaliar o seu mentor. Bora lá?
+                </h3>
+            </div>
+        </div>
+        <div class="imagen-container">
+            <img class="imagen-header" src="imagens/balao.png" alt="" />
+        </div>
+        <div class="container-formulario-titulo">
+            <div class="mentoria">
+                <h1 class="titulo-form">Informações pessoais</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-formulario">
+            <form method="get" class="formulario">
+                <div class="container-informacoes-basicas">
+                    <div class="grupo-input-nome">
+                        <div class="label-nome-container">
+                            <label class="label-style-basico" for="nome">Nome</label>
+                        </div>
+                        <div class="imput-nome-container">
+                            <input type="text" id="nome" required class="input-style-nome" />
+                        </div>
+                    </div>
+                    <div class="grupo-input-nome">
+                        <div class="label-nome-container">
+                            <label class="label-style-basico" for="nome">Sobrenome</label>
+                        </div>
+                        <div class="imput-nome-container">
+                            <input type="text" id="nome" required class="input-style-nome" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container-info">
+                    <div class="email">
+                        <div class="container-label-email">
+                            <label class="label-style" for="email">Email
+                                <span class="span"> (digite um email válido)</span></label>
+                        </div>
+                        <div class="container-email">
+                            <input type="email" required class="input-style-mentoria" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container-info-mentoria">
+                    <div class="container-subtitulo">
+                        <h1 class="subtitulo-form">Informações do mentor</h1>
+                    </div>
+                    <div class="container-separador">
+                        <div class="separador"></div>
+                    </div>
+                    <div class="container-select">
+                        <div class="container-select-infos">
+                            <div class="label-mentor-container">
+                                <label class="label-style" for="mentor-email">Selecione quem foi o seu mentor</label>
+                            </div>
+                            <div class="select-container">
+                                <select name="selecao" id="mentor-email" required class="input-style-select">
+                                    <option value="professora">professora</option>
+                                    <option value="professorb">professorb</option>
+                                    <option value="professorc">professorc</option>
+                                    <option value="professord">professord</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-select">
+                        <div class="container-select-infos">
+                            <div class="label-mentor-container">
+                                <label class="label-style" for="comentarios">Feedback sobre o mentor</label>
+                            </div>
+                            <div class="select-container">
+                                <input type="text" id="comentarios" required class="input-style-comentarios" />
+                            </div>
+                            <div class="container-checkbox">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="mentoria-checkbox" required class="checkbox-mentoria" />
+                                </div>
+                                <div class="label-checkbox-container">
+                                    <label class="label-style" for="mentoria-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-datas">
+                        <div class="container-subtitulo">
+                            <h1 class="subtitulo-form">Agendando próxima mentoria</h1>
+                        </div>
+                        <div class="container-separador">
+                            <div class="separador"></div>
+                        </div>
+                        <div class="container-informacoes-basicas">
+                            <div class="grupo-input-nome">
+                                <div class="label-nome-container">
+                                    <label class="label-style-basico" for="nome">data <span class="span">(DD/MM/AAAA)</span></label>
+                                </div>
+                                <div class="imput-nome-container">
+                                    <input type="date" id="nome" required class="input-style-data-ano" />
+                                </div>
+                            </div>
+                            <div class="grupo-input-datas">
+                                <div class="label-nome-container">
+                                    <label class="label-style-basico" for="nome">Das </label>
+                                </div>
+                                <div class="imput-nome-container">
+                                    <input type="datetime" id="nome" required class="input-style-data" />
+                                </div>
+                            </div>
+                            <div class="grupo-input-datas">
+                                <div class="label-nome-container">
+                                    <label class="label-style-basico" for="nome">Até </label>
+                                </div>
+                                <div class="imput-nome-container">
+                                    <input type="datetime" id="nome" required class="input-style-data" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-botao">
+                        <button type="submit" class="botao-envio">Salvar</button>
+                     </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
