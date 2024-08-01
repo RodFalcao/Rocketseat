@@ -1,0 +1,70 @@
+body {
+  background-color: #2f2e41;
+}
+nav {
+  margin-top: 71px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container-botoes {
+  font-family: "JetBrains Mono", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  font-size: 14px;
+}
+.nav-botao {
+  margin: 30px;
+}
+main {
+  margin-top: 131px;
+  display: flex;
+  justify-content: center;
+}
+.container-textos {
+  margin-left: 120px;
+}
+#titulo {
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: #ffffff;
+  font-size: 36px;
+}
+span {
+  font-family: "JetBrains Mono", monospace;
+  color: #00bfa6;
+}
+#subtitulo {
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: #c2c2c2;
+  font-size: 16px;
+}
+footer {
+  margin-top: 222px;
+}
+.container-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.line {
+  background-color: #00bfa6;
+  width: 568px;
+  height: 1px;
+}
+.cadeado {
+  position: fixed;
+  bottom: 0;
+  left: 100%;
+}
+#saiba-mais {
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: #ffffff;
+  font-size: 14px;
+}

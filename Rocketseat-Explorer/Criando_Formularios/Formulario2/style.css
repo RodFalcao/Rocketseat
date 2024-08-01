@@ -1,0 +1,205 @@
+body {
+  background-color: #BFD7E4;
+}
+header {
+  margin-top: -20px;
+  background-color: #293241;
+  height: 465px;
+  border-radius: 10px;
+}
+.titulo {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-header {
+  height: 100px;
+  width: 225px;
+}
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario {
+  height: 1075px;
+  width: 750px;
+  background-color: #ffffff;
+}
+.container-formulario-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mentoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 133px;
+  background-color: #f67669;
+  border-radius: 20px 20px 0 0;
+}
+.titulo-form {
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+.container-informacoes-basicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+.input-style-nome {
+  font-family: "Poppins", sans-serif;
+  width: 300px; 
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6e6f0;
+  background-color: #FAFAFC
+}
+.container-separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separador {
+  background-color: #E6E6F0;
+  width: 622px;
+  height: 1px;
+}
+.container-subtitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subtitulo-form {
+  font-family: "Staatliches", sans-serif;
+  color: #253B51;
+  font-size: 24px
+  ;
+}
+.input-style-mentoria {
+  font-family: "Poppins", sans-serif;
+  width: 622px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6e6f0;
+  background-color: #FAFAFC
+}
+.container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.grupo-input-nome {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.input-style-select {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6e6f0;
+  background-color: #FAFAFC
+}
+.container-select {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ margin-left: 70px;
+}
+.input-style-comentarios {
+  font-family: "Poppins", sans-serif;
+ height: 166.59px ; 
+ width: 608px;
+ border-radius: 8px;
+ padding: 0 5px;
+ border: 1px solid #e6e6f0;
+ background-color: #FAFAFC
+ ;
+}
+.label-style-basico {
+  font-family: "Poppins", sans-serif;
+}
+.label-style {
+  font-family: "Poppins", sans-serif;
+  width: 14px;
+  font-weight: 400
+  ;
+}
+.container-checkbox {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.checkbox-mentoria {
+width:24px ;  
+height: 23.8px;
+border-radius: 8px;
+}
+.span {
+  color: #C1BCCC;
+}
+.input-style-data-ano {
+  font-family: "Poppins", sans-serif;
+  width: 300px; 
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6e6f0;
+  background-color: #FAFAFC
+}
+.input-style-data {
+  font-family: "Poppins", sans-serif;
+  width: 140px; 
+  height: 56px;
+  border-radius: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6e6f0;
+  background-color: #FAFAFC
+}
+.container-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.botao-envio {
+  border: 1px solid #F67669;
+  font-family: "Staatliches", sans-serif;
+  color: white;
+  width: 622px;
+  height: 51px;
+  border-radius: 8px;
+  background-color: #F67669;
+  font-size: 20px;
+}
