@@ -1,5 +1,5 @@
 # Rocketseat Projetos
 ---
-Nesse repositorio vou postar meus projetos feitos no curso da rocketseat!
+Nesse repositorio vou postar meus projetos e atividades feitos no curso da rocketseat!
 - 
 
