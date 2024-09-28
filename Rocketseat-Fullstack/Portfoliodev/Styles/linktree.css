@@ -1,0 +1,47 @@
+@import url(nav.css);
+@import url(global.css);
+@import url(utility.css);
+.ctrltree {
+    margin: 2%;
+    margin-bottom: 50px;
+    width: 360px;
+    height: 100px;
+    background: rgba(29, 29, 34, 0.74);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(68, 65, 100, 0.3);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.ctrltree:hover {
+    transform: scale(1.05);
+}
+#tree {
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.bt-tree {
+    padding: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+.bt-tree:hover {
+    text-decoration: underline;
+}

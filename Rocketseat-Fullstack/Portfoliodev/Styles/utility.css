@@ -1,0 +1,91 @@
+.tech-langs {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgb(41, 38, 51);
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.tech-langs:hover {
+    filter: brightness(1.3);
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.end-text{
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.separador {
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(34, 33, 43);
+}
+.contain-separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.txt-red {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+.pj-link {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+.tag-independente {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    background: rgb(233,131,69);
+    background: linear-gradient(315deg, rgba(233,131,69,1) 0%, rgba(255,111,111,1) 100%);
+    color: white;
+}
+.tag-rocketseat {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(80,69,233);
+    background: linear-gradient(315deg, rgba(80,69,233,1) 0%, rgba(75,28,143,1) 100%);
+}
+.tag-yellow {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(233,161,69);
+    background: linear-gradient(315deg, rgba(233,161,69,1) 0%, rgba(255,209,111,1) 100%);
+}
+.tag-front {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(69,222,233);
+    background: linear-gradient(315deg, rgba(69,222,233,1) 0%, rgba(180,111,255,1) 100%);
+}
+.tag-backend {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(69,222,233);
+    background: linear-gradient(315deg, rgb(64, 52, 109) 0%, rgb(131, 15, 255) 100%);
+}
