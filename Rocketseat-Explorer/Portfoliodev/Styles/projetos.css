@@ -1,0 +1,53 @@
+@import url(nav.css);
+@import url(global.css);
+@import url(utility.css);
+
+#contain-pj-2 {
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.pj-web {
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    background: rgba(29, 29, 34, 0.74);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(68, 65, 100, 0.3);
+    transition: 0.5s;
+}
+.pj-web img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pj-web:hover {
+    border: 1px solid rgba(161, 155, 233, 0.322);
+    transform: scale(1.04);
+}
+.pj-link {
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.pj-link:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.contain-tags {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: rgb(35, 35, 41);
+    display: flex;
+}

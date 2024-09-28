@@ -1,0 +1,27 @@
+@import url(nav.css);
+@import url(index.css);
+@import url(utility.css);
+@import url(linktree.css);
+@import url(mc.css);
+* {
+    padding: 0px;
+    margin: 0px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer div {
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: bottom;
+    height: 100px;
+    background: rgba(16, 16, 19, 0.452);
+    border: 1px solid rgba(101, 98, 133, 0.123);
+}
