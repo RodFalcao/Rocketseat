@@ -1,0 +1,39 @@
+@keyframes slideup {
+    0%, 22% { transform: translateY(-.5rem);}
+    33%, 55% {transform: translateY(-5rem);}
+    66%, 88% {transform: translateY(-9.5rem)}
+    100% {transform: translateY(-15rem);}
+}
+
+@keyframes slidein {
+    50% {
+        transform: translateX(-20px);
+      }
+    
+      100% {
+        transform: translateX(0);
+      }
+}
+
+@keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes rolling {
+    to {
+        transform: translateX(-132px);
+    }
+}
+@keyframes gradient-bg {
+    50% {
+        background-position: 100%, 50%;
+    }
+}
+@keyframes image-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

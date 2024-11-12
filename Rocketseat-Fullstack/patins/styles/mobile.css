@@ -1,0 +1,75 @@
+@media screen and (max-width: 1057px) {
+    section.gallery {
+        width: 100%;
+        max-width: 80rem;
+        padding: 2.5rem 2rem;
+      
+      
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      
+        & .content {
+          margin-top: 2rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.5rem;
+        }
+    }
+    .sumir {
+        display: none;
+    }
+    .text-mobile {
+        text-align: center;
+    }
+
+    @keyframes slideupmobile {
+        0%, 22% { transform: translateY(-.5rem);}
+        33%, 55% {transform: translateY(-5rem);}
+        66%, 88% {transform: translateY(-9.5rem)}
+        100% {transform: translateY(-15rem);}
+    }
+    #hero {
+        & > div:nth-child(2) {
+            display: block;
+            width: 100%;
+            max-width: 30.5rem;
+            height: 30.5rem;
+    
+            & #content {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            & img {
+                position: absolute;
+
+                transform: translateX(200%);
+                animation: slidein 3s 200ms ease forwards;
+            }
+    
+            & img[src="assets/images/patins-image.png"] {
+                z-index: 1;
+            }
+            & img[src="assets/Stars 1.svg"] {
+                top: 45%;
+            }
+            & img[src="assets/Stars 2.svg"] {
+                top: 65%;
+
+            }
+        }   
+    }
+    .mobile-footer  {
+        flex-wrap: wrap;
+    }
+    .show-mobile {
+        display: inline;
+    }
+}
+@media screen and (min-width: 1057px) {
+    .hide-pc {
+        display: none;
+    }
+}

@@ -1,0 +1,329 @@
+#hero {
+    max-width: 80rem;
+    width: 100%;
+
+    padding: 2.5ren 2.5rem;
+    overflow: hidden;
+    margin-inline: auto;
+    
+
+    h1 div {
+        display: inline-block;
+        height: 3.7rem;
+        width: min-content;
+        vertical-align: bottom;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: var(--text-xl);
+
+    }
+    h1 span {
+        display: block;
+        animation: slideup 6s infinite
+    }
+    h1 span:nth-child(1) {
+        color: var(--sky);
+    }
+    h1 span:nth-child(2) {
+        color: var(--joy);
+    }
+    h1 span:nth-child(3) {
+        color: var(--leaf);
+    }
+    h1 span:nth-child(4) {
+        color: var(--sky);
+    }
+
+    
+    & .btn {
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        &:hover {
+            scale: 1.05;
+        }
+
+    }
+    .play {
+        padding: 1.5rem 1.5rem;
+        border-radius: 100%;
+    }
+    .buy {
+        border-radius: 5rem;
+        padding: 1.5rem 3rem;
+        background-color: var(--yellow);
+    }
+    .shadow {
+        box-shadow: 0 2px 5px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)), 
+        0 2px 9px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)), 
+        0 2px 12px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)),
+        0 2px 16px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    }
+    & > div:nth-child(2) {
+        display: block;
+        width: 100%;
+        max-width: 30.5rem;
+        height: 30.5rem;
+
+        & #content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        & img {
+            position: absolute;
+            width: 350px;
+            transform: translateX(200%);
+            animation: slidein 3s 200ms ease forwards;
+        }
+
+        & img[src="assets/images/patins-image.png"] {
+            z-index: 1;
+
+            transform: translateX(200%);
+            animation: slidein 3s ease forwards;
+        }
+        & img[src="assets/Stars 1.svg"] {
+            width: 5.5rem;
+            z-index: 0;
+            transform: translateX(400%);
+            margin-right: 250px;
+            top: 15%;
+        }
+        & img[src="assets/Stars 2.svg"] {
+            width: 3.5rem;
+            z-index: 0;
+            transform: translateX(400%);
+            margin-left: 350px;
+            bottom: 55%;
+            transform: translateX(400%);
+        }
+    }
+}
+.banner {
+    width: 100%;
+    padding-block: 2.5rem;
+
+    overflow: hidden;
+
+    .scroler {
+        overflow: hidden;
+        width: 100%;
+        padding-block: 1rem;
+    }
+    .rolling {
+        animation: rolling 2s linear infinite;
+
+        gap: 1.5rem;
+    }
+
+    .bg-gradient {
+        background: linear-gradient(45deg,
+        var(--sky), var(--joy)
+        
+        ) ;
+        background-size: 400%;
+        background-position: 0 50%;
+
+        animation: gradient-bg 20s ease infinite;
+    }
+}
+section.gallery {
+    width: 100%;
+    max-width: 80rem;
+    padding: 2.5rem 2rem;
+    margin-inline: auto;
+  
+    & header {
+      text-align: center;
+    }
+  
+    & header span {
+      font: 500 var(--text-sm) / 1.5 var(--ff-base);
+    }
+  
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  
+    & .content {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-areas:
+        'A B B'
+        'C C D';
+  
+      gap: 2.5rem;
+    }
+  
+    & figure {
+      position: relative;
+      border-radius: 2.5rem;
+      overflow: hidden;
+      line-height: 0;
+  
+      animation: image-appear linear backwards;
+      animation-range: 100px 300px;
+  
+      &[data-delay] {
+        animation-range: 150px 350px;
+      }
+  
+      & > img {
+        height: 25rem;
+        object-fit: cover;
+        transition: scale 500ms;
+      }
+  
+      &:hover {
+        & > img {
+          scale: 1.1;
+        }
+  
+        figcaption {
+          transform: translateY(0);
+        }
+      }
+  
+      &:nth-child(1) {
+        grid-area: A;
+      }
+  
+      &:nth-child(2) {
+        grid-area: B;
+      }
+  
+      &:nth-child(3) {
+        grid-area: C;
+      }
+  
+      &:nth-child(4) {
+        grid-area: D;
+      }
+    }
+  
+    & figcaption {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+  
+      font: 500 var(--text-sm) / 1.5 var(--ff-base);
+      color: white;
+  
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+  
+      padding: 1.5rem 2rem;
+  
+      transform: translateY(100%);
+      transition: transform 500ms;
+  
+      background: linear-gradient(to top, rgb(0 0 0 / 0.64), rgb(0 0 0 / 0));
+  
+      & > img {
+        width: 2rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+}
+footer {
+  max-width: 80rem;
+  width: 100%;
+  padding: 4rem 2rem 2rem;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    font: 700 1.25rem/1.3 'Syne', sans-serif;
+
+    & img {
+      width: 2rem;
+      transition: rotate 350ms;
+
+      &:hover {
+        rotate: 90deg;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    gap: 2rem;
+
+    & a {
+
+      &:hover::after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    & a::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: var(--snitap-sky-mid);
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transform: scaleX(0);
+      transition: transform 200ms linear;
+    }
+  }
+
+  .social-links {
+
+    & a {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      border-radius: 5rem;
+
+      position: relative;
+
+      &:hover::before {
+        scale: 1;
+      }
+
+      & img {
+        width: 1.5rem;
+        height: auto;
+      }
+
+      &::before {
+        content: '';
+
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+
+        background: var(--snitap-sun);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        scale: 0;
+        transition: scale 200ms;
+      }
+    }
+  }
+}
+  
