@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="global.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/">
+    <title>
+        Estrelas do amanha
+    </title>
+</head>
+<body >
+
+    </div>
+    <div id="app" >
+         <div class="hide-pc">
+            <aside class="flex">
+                <div class="aside-container ">
+                    <header>
+                        <img src="assets/icons/" alt="logo do formulario de matricula">
+                        <h2>Porque cada momento de <strong>aprendizado</strong> conta</h2>
+                        <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                    </header>
+                    <img src="assets/ilustraçoes/Illustration.png" alt="professora e papeis">
+                </div>
+         </div>
+            </aside>
+        <main class="flex aligh-center justify-center">
+            <div class="main-container">
+                <div class="back">
+                    <img src="assets/icons/arrow-left-02.png" alt="voltar para pagina anterior">
+                    <span>Voltar</span>
+                </div>
+                <h1>Formulario de matricula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="imput-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input name="fullname" id="fullname" type="text" placeholder="Qual o nome da criança?" ></input>
+                        </div>
+
+                        <div class="imput-wrapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input name="birth" id="birth" type="date" lang="pt-br"></input>
+                        </div>
+
+                        <div class="imput-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="nao-binario(a)">Não binario(a)</option>
+                                <option value="na">Prefiro náo responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações medicas</label>
+                            <textarea name="medical-inf" id="medical-info"
+                            cols="30" rows="5" placeholder="A criança possui alguma condiçao medica?"></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <label for="birth-file">Certidão de nascimento</label>
+                            <div class="dropzone">
+                                    <input type="file" id="birth-file" name="birth-file">
+                                    <img src="assets/icons/cloud-upload.png" alt="">
+                                    <p>Clique aqui para <br>selecionar os arquivos</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="address">
+                        <legend>Endereço residencial</legend>
+                        
+                        <div class="imput-wrapper">
+                            <label for="cep">CEP</label>
+                            <input name="cep" id="cep" type="text" placeholder="Qual o nome da criança?" ></input>
+                        </div>
+                        <div class="flex">
+                            <div class="imput-wrapper flex-2">
+                                <label for="street">Rua</label>
+                                <input name="street" id="street" type="text" placeholder="Rua" value="Rua das Flores" ></input>
+                            </div>
+                            <div class="imput-wrapper flex-1">
+                                <label for="number">Numero</label>
+                                <input name="number" id="number" type="number" placeholder="123"></input>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="imput-wrapper flex-2">
+                                <label for="city">Cidade</label>
+                                <input name="city" id="city" type="text" placeholder="Rua" value="são paulo" ></input>
+                            </div>
+                            <div class="imput-wrapper flex-1">
+                                <label for="state">Estado</label>
+                                <input name="state" id="state" type="text" placeholder="Estado"></input>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="gardian">
+                        <legend>Endereço residencial</legend>
+
+                            <div class="imput-wrapper">
+                                <label for="gardian">Nome do responsável</label>
+                                <input name="gardian" id="gardian" type="text" ></input>
+                                <small>principal responsável legal e contato de emergência</small>
+                            </div>   
+                            <div class="imput-wrapper ">
+                                <label for="phone">Telefone</label>
+                                <input name="phone" id="phone" type="text" placeholder="(ddd) 99490-1636" ></input>
+                            </div>  
+                            <div class="imput-wrapper ">
+                                <label for="mail">Email</label>
+                                <input name="mail" id="mail" type="email" placeholder="username@mail.com" required ></input>
+                                <div class="error">
+                                        <img src="assets/icons/alert-circle.png" alt="Icone de alert">
+                                        <span>Insira um e-mail válido</span>
+                                </div>
+                            </div> 
+                    </fieldset>
+                    <fieldset class="enroll-options">
+                        <legend>Opções de matrícula</legend>
+
+                        <div class="input-wrapper">
+                            <label>Selecione o turno de estudo</label>
+
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="morning" id="morning">
+                                    <img src="assets/icons/sun-cloud-02.png" alt="ícone de sol com nuvem">
+                                    <label for="morning">Manhã</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="evening" id="evening">
+                                    <img src="assets/icons/sun-02.png" alt="ícone de sol">
+                                    <label for="evening">Tarde</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="football">
+                                    <img src="assets/icons/football.png" alt="ícone de futebol">
+                                    <label for="football">Futebol</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="basketball">
+                                    <img src="assets/icons/basketball-02.png" alt="ícone de basquete">
+                                    <label for="basketball">Basquete</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="swimming">
+                                    <img src="assets/icons/swimming.png" alt="ícone de natação">
+                                    <label for="swimming">Natação</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="yoga">
+                                    <img src="assets/icons/yoga-02.png" alt="ícone de yoga">
+                                    <label for="yoga">Yoga</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="volleyball">
+                                    <img src="assets/icons/volleyball.png" alt="ícone de volleyball">
+                                    <label for="volleyball">Vôlei</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="sport" id="boxing">
+                                    <img src="assets/icons/boxing-glove-01.png" alt="ícone de boxing">
+                                    <label for="boxing">Boxe</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </fieldset>
+
+                    <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                        <div class="checkbox-image"></div>
+                        <input class="chekcbox-style" type="checkbox" name="terms" id="terms">
+
+                        <label for="terms">
+                            Declaro que li e concordo com os <strong>Termos e Condições</strong> e com a
+                            <strong>Política de Privacidade</strong> da escola Estrela do Amanhã.
+                        </label>
+                    </div>
+
+                    <div class="actions-wrapper">
+                        <button class="btn-secondary" type="button">
+                            Salvar respostas
+                        </button>
+
+                        <button class="btn-primary" type="submit">
+                            Fazer matrícula
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <aside class="show-pc">
+            <div class="aside-container">
+                <header>
+                    <img src="assets/icons/" alt="logo do formulario de matricula">
+                    <h2>Porque cada momento de <strong>aprendizado</strong> conta</h2>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </header>
+                <img src="assets/ilustraçoes/Illustration.png" alt="professora e papeis">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

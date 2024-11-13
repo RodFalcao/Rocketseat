@@ -1,0 +1,56 @@
+@import url(fields/index.css);
+
+form {
+    margin-top: 3rem;
+}
+fieldset {
+    border: none;
+
+
+    display: grid;
+    gap: 1.3rem;
+}
+legend {
+    font: 600 1rem/1.25 var(--font-family);
+    margin-bottom: 1.5rem;
+}
+fieldset + fieldset {
+    margin-top: 4rem;
+}
+button {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-highlight);
+    width:  10rem;
+    height:  2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+.btn-primary {
+    color: white;
+    background-color: #E43A12;
+
+    &:hover,
+    &:focus {
+        background-color: #F3541C;
+    }
+}
+
+.btn-secondary {
+    
+    margin-left: auto;
+    border: 1px solid var(   --surface-secondary);
+
+    &:hover,
+    &:focus {
+        color: #E43A12;
+        outline: .25rem solid var(--surface-secondary);
+    }
+}
+.chekcbox-style {
+    margin-bottom: -5px;
+    width: 20px;
+    height: 20px;
+}

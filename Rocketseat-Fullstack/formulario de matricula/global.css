@@ -1,0 +1,93 @@
+@import url(styles/index.css);
+@import url(styles/layout.css);
+@import url(styles/form.css);
+@import url(styles/utility.css);
+@import url(styles/fields/index.css);
+@import url(styles/mobile.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --text: 400 1rem/1.5 var(--font-family);
+    --text-sm: 400 0.875rem/1.4 var(var(--font-family));
+
+    --text-primary: #57534E;
+    --text-secondary: #57534E;
+    --text-tertiary: #8F8881;
+    --text-hilight: #E43A12;
+
+    --surface-primary: #ffffff;
+    --surface-secondary: #FEE7D6;
+
+    --stroke-default: #D6D3D1;
+    --stroke-hilight: #F3541C;
+    --semantic-erros: #DC2626;
+
+}
+body {
+    overflow: hidden;
+
+    font: var(--text);
+    color: var(--text-secondary);
+}
+h1, h2 {
+    color: var(--text-primary);
+
+}
+main {
+    overflow: auto;
+    padding: 4rem;
+
+   & .main-container {
+    margin-left: auto;
+    }
+
+    & .back {
+        display: flex;
+        gap: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        font: 600 1.5rem/1.25 var(--font-family);
+        margin-bottom: .5rem;
+    }
+}
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    & .aside-container {
+        max-width: 31rem;
+
+        & > img {
+            margin-top: 2rem;
+        }
+    }
+    & h2 {
+        font: 600 2.5rem/1.25 var(--font-family);
+        margin-bottom: .5rem;
+
+        & .span {
+            color: var(--text-hilight);
+        }
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.address .flex {
+    gap: 1.25rem;
+}

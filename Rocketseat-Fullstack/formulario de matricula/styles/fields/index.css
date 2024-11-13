@@ -1,0 +1,130 @@
+@import url(droparea.css);
+
+input, text, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--stroke-default);
+    padding: .75rem 1rem;
+    font: var(--text);
+}
+label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+
+}
+input:focus, select:focus, textarea:focus{
+    outline: .25rem solid var(--surface-secondary);
+    border: .125rem solid var(--stroke-light);
+    outline-offset: .1px;
+}
+
+input[type="date"] {
+    position: relative; 
+    &::webkit-calendar-picker-indicator {
+        position: absolute;
+        background: url(/assets/icons/vector.png) center/contain;
+        right: 1rem;
+        width: 1.25rem;
+        height: 1.25rem;
+
+        top: 50%;
+        transform: translatey(-50%);
+    }
+    &:invalid {
+        border: .125rem solid color(srgb red);
+    }
+    & + small {
+        font: var(--text-sm);
+        color: #78716C ;
+
+        display: inline-flex;
+        margin-top: .25rem;
+    }
+    &[required] + .error {
+        font: var(--text-sm);
+        color: red;
+        gap: .25rem;
+        display: flex;
+        align-items: center;
+        margin-top: .25rem;
+    }
+    &:valid + .error {
+        display: none;
+    }
+
+}
+
+select {
+    background:url(assets/icons/arrow.png)
+    no-repeat calc(100% -1rem);
+
+
+}
+textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--stroke-default);
+    padding: .75rem 1rem;
+    font: var(--text);
+}
+
+label+.radio-wrapper {
+    margin-top: 1rem;
+}
+
+.radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1rem;
+}
+
+.radio-inner {
+    border: 1px solid var(--stroke-default);
+    border-radius: .5rem;
+
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+
+    padding: 2rem .5rem .5rem;
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .radio-image {
+        background-image: url(../../assets/icons/radio-default.svg);
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+    }
+
+    &:hover,
+    &:focus-within {
+        border: 1px solid var(--stroke-highlight);
+
+        & .radio-image {
+            background-image: url(../../assets/icons/radio-hover.svg);
+        }
+    }
+
+    &:has(:checked) {
+        border: 2px solid var(--stroke-highlight);
+
+        & .radio-image {
+            background-image: url(../../assets/icons/radio-checked.svg);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 800px){
+    aside {
+        display: none;
+    }
+    .show-mobile {
+        display: inline;
+    }
+    #app {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+
+    }
+}
+@media screen and (min-width: 1057px) {
+    .hide-pc {
+        display: none;
+    }
+}
