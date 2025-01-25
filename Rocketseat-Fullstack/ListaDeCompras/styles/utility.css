@@ -1,0 +1,60 @@
+.back-btn {
+    color: var(--brand);
+}
+li {
+    background-color: var( --alwayswhite);
+    font-weight:400;
+    border-radius: 1rem;
+    width: 627px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--content-b);
+    input[type="checkbox"] {
+        height: 1rem;
+        width:  1rem;
+        margin-left: 1rem;
+        margin-right: .6rem;
+        border-radius: 3rem;
+        border: 1px solid var(--stroke-b);
+        appearance: none;
+    }
+    input[type="checkbox"]:checked  {
+        background-color: var(--brand);
+        border: 1px solid var(--brand);
+    }
+    button {
+
+        width: 2rem;
+        height: 2rem;
+        margin: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.warn {
+    padding: 1rem;
+    color: var(--txt-a);
+    display: flex;
+    align-items: center;
+    height: 49px;
+    border-radius: 1rem;
+    width: 627px;
+    background-color: var(--warn);
+    
+    img {
+        margin-right: .5rem;
+    }
+    button {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.show-result {
+    display: none;
+}

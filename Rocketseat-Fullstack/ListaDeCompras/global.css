@@ -1,0 +1,50 @@
+@import url(styles/nav.css);
+@import url(styles/form.css);
+@import url(styles/utility.css);
+@import url(styles/mobile.css);
+
+* {
+    padding:0 ;
+    margin:0 ;
+
+}
+:root {
+    --bg: #F4F5FB;
+
+    --txt-a: #F4F5FB;
+    --brand: #CA3884;
+    --brand-second: #A52C6B;
+
+    --warn: #C93847;
+
+    --content-a:#080B12 ;
+    --content-b: #374151;
+    --content-c: #9CA3AF;
+
+    --alwayswhite: #FFFFFF;
+
+    --stroke-a: #D1D5DB;
+    --stroke-b: #B9C2D0;
+
+
+}
+html {
+    background-color: var(--bg);
+
+    h1 {
+        font-family: "Inter", serif;
+        font-size: 24px;
+    }
+    label {
+        font-family: "Inter", serif;
+        font-size: 16px;
+    }
+    p {
+        font-family: "Inter", serif;
+        font-size: 16px;
+    }
+    a {
+        font-family: "Inter", serif;
+       font-size: 14px;
+    }
+}

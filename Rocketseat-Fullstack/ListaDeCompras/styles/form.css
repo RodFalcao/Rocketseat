@@ -1,0 +1,21 @@
+fieldset {
+    width: 627px;
+
+
+    input {
+        height: 44px;
+        width: 451px;
+        background-color: var( --alwayswhite);
+        border: 1px solid var(--stroke-b);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    button {
+        color: var(--txt-a);
+        border-radius: 1rem;
+        width: 160px;
+        height: 44px;
+        background-color: var( --brand);
+    }
+
+}
