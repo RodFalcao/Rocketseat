@@ -1,0 +1,49 @@
+@import url(styles/nav.css);
+@import url(styles/buttons.css);
+@import url(styles/main.css);
+@import url(styles/animations.css);
+@import url(styles/mobile.css);
+
+
+:root {
+    --bg: #020202;
+    --bg-secondary: #111012;
+    --bg-tertiary: #24222E;
+
+
+
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+
+    --brand: #C58DE7;
+    --bg-brand:#C58DE7;
+
+    --bg-gray: #3D3D3D;
+
+    --color-inverse:#030203 ;
+
+    --gradient-content: linear-gradient(90deg, #C7C9CC 0%, #3D3D3D 100%);
+}
+
+html {
+    background-color: var(--bg);
+}
+
+.bg-01 {
+    object-fit: repeat;
+    background-image: url(assets/Shapes.svg);
+}
+main {
+    animation: start .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.show-totals {
+    display: block;
+}
+.hide-totals {
+    display: none;
+}

@@ -1,0 +1,19 @@
+nav {  
+    .logo {
+        display: flex;
+        gap: 11px;
+        font-size: 1.5rem;
+        color: var(--content-primary);
+        font-weight: bolder;
+        img {
+            
+            width: 38px;
+            height: 38px;
+        }
+    }
+    .logo:hover {
+        img {
+           animation: rotate .5s ease;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.btn-style {
+    width: 100%;
+    height: 56px;
+    background-color: var(--bg-tertiary);
+    color: var(--content-primary);
+    border-radius: .5rem;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        margin-top: 2px;
+        margin-left: .4rem;
+        transition: 0.2s;
+        width: 22px;
+    }
+}
+.btn-style:hover {
+    background-color: var(--bg-secondary);
+    img {
+        transform: translateX(10px);
+    }
+}
